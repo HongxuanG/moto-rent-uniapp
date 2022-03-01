@@ -1,0 +1,98 @@
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.goback {
+  position: absolute;
+  left: 40rpx;
+  z-index: 99;
+  width: 60rpx;
+  height: 60rpx;
+  background-color: transparent;
+}
+
+.goback-icon {
+  font-size: 35rpx;
+  color: #fff;
+}
+
+.logo {
+  width: 100%;
+  height: 45vh;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.logo::after {
+  content: '';
+  width: 140%;
+  height: 100%;
+  position: absolute;
+  left: -20%;
+  top: 0;
+  z-index: -1;
+  border-radius: 0 0 50% 50%;
+  background: #2ea7e0;
+  /* background: url(../../static/logo.png) no-repeat center center ; */
+  /* background-size: 100% 100%; */
+  background: #2ea7e0;
+}
+
+.text-area {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 36rpx;
+  color: #8f8f94;
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
+}
+
+.app-name {
+  font-size: 48rpx;
+  font-weight: 550;
+  color: #fff;
+}
+
+.logo-container {
+  position: absolute;
+  left: 50%;
+  top: 15vh;
+  transform: translateX(-50%);
+  width: 200rpx;
+  height: 200rpx;
+  text-align: center;
+}
+
+.about-us {
+  margin-top: 25px;
+  width: 100%;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+.cell-item {
+  padding: 10rpx;
+  font-size: 28rpx;
+  color: #87898d;
+}
+.cell-value {
+  color: #333;
+}
+.copyright {
+  position: fixed;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+  color: #919191;
+  font-size: 24rpx;
+}

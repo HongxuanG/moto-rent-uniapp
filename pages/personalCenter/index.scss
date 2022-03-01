@@ -1,0 +1,74 @@
+page {
+  height: 100vh;
+}
+.personal-center {
+}
+.container {
+  height: 100%;
+}
+.content {
+  width: 90%;
+  margin: 0 auto;
+  .content-title {
+    padding: 20rpx 0;
+    font-size: 50rpx;
+  }
+  .message-card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30rpx;
+    border-radius: 10px;
+    background-color: #3d3e42;
+    color: #fff;
+    box-shadow: 0 7px 16px 0px #8c8383;
+    margin-bottom: 40px;
+    .mc-info {
+      margin-bottom: 50rpx;
+    }
+    .username {
+      font-size: 60rpx;
+      padding: 10rpx 0;
+    }
+    .info {
+    }
+    .time {
+    }
+    .btn {
+      padding: 0 20px;
+      margin: 0;
+      font-size: 28rpx;
+      border-radius: 50px;
+      font-size: #fff;
+    }
+  }
+  .section {
+    .section-item {
+      padding: 20rpx 0;
+      .cell-title {
+        font-size: 30rpx;
+        .iconfont {
+          padding: 0 20rpx;
+          font-size: 60rpx !important;
+        }
+      }
+      .arrows {
+        .iconfont {
+          font-weight: 700;
+          font-size: 30rpx;
+        }
+      }
+    }
+  }
+}
+.bottom-button {
+  width: 90%;
+  padding: 20rpx;
+  border-radius: 50rpx;
+  background-color: #e2e2e2;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-bottom: env(safe-area-inset-bottom);
+  .checkout-accrount {
+  }
+}

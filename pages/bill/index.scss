@@ -1,0 +1,55 @@
+page {
+  height: 100%;
+}
+.scroll-Y {
+  overflow: auto;
+  height: 100%;
+  position: relative;
+}
+.scroll-list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transform: translate3d(0, 0, 0);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.bill {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+
+  .content {
+    background-color: #f7f7f7;
+    overflow: hidden;
+    .bill-card {
+      width: 90%;
+      margin: 20rpx auto 0;
+      padding: 20rpx;
+      background-color: #fff;
+      border-radius: 10px;
+      font-size: 26rpx;
+      color: #c0bcbc;
+
+      .bill-detail {
+
+        .bill-number {}
+
+        .bill-amount {
+          color: #333;
+          font-weight: 600;
+          font-size: 28rpx;
+        }
+      }
+
+      .bill-type {}
+
+      .bill-time {}
+      &>view + view {
+        margin-top: 20rpx;
+      }
+    }
+  }
+}

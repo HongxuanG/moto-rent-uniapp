@@ -1,0 +1,85 @@
+$input-color: #8a88e6;
+.content {
+  padding: 0 40rpx;
+  .content-title {
+    padding: 20rpx 0;
+    font-size: 50rpx;
+  }
+  .send-to {
+    color: #8d8d8d;
+  }
+  .input-bar {
+    margin-top: 20rpx;
+    margin-bottom: 40rpx;
+  }
+  .body {
+    .next {
+      border-radius: 50px;
+      text-align: center;
+      color: #fff;
+      margin: 0 20rpx;
+      padding: 20rpx 0;
+      background-color: #27282c;
+    }
+  }
+}
+.number-input {
+  width: 0;
+  height: 0;
+  min-height: unset;
+  border: none;
+  margin: 0;
+  color: $uni-text-color;
+  font-size: 52rpx;
+}
+.labels {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  height: 80rpx;
+}
+.label {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 16%;
+  height: 76rpx;
+  font-size: 50rpx;
+  border-bottom: 4rpx solid $input-color;
+}
+.get-code {
+  width: 800rpx;
+  border-radius: 50px;
+  color: $button-color;
+  background-color: $button-bg;
+  white-space: nowrap;
+  padding: 20rpx 40rpx;
+}
+.button {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.active::after {
+  // 伪类实现光标效果
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  height: 85%;
+  width: 2px;
+  background: #313131;
+  animation: 0.8s animate infinite;
+}
+@keyframes animate {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,76 @@
+@import '../../css/global.scss';
+.body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.icon {
+  position: absolute;
+  z-index: 99;
+  width: 96rpx;
+  height: 96rpx;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid $uni-border-color;
+  box-sizing: border-box;
+  box-shadow: 0 0.9px 0.5px rgba(0, 0, 0, 0.7);
+  .iconfont {
+    color: $uni-text-color;
+    font-size: 50rpx;
+  }
+}
+.page-body {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  transition: transform 0.3s ease;
+  .personal {
+    @extend .icon;
+    top: 30rpx;
+    /* #ifdef MP-WEIXIN */
+    top: 160rpx;
+    /* #endif */
+    left: 36rpx;
+  }
+  .search {
+    @extend .icon;
+    top: 30rpx;
+    /* #ifdef MP-WEIXIN */
+    top: 160rpx;
+    /* #endif */
+    right: 36rpx;
+  }
+  .me {
+    @extend .icon;
+    width: 80rpx;
+    height: 80rpx;
+    bottom: 27%;
+    right: 36rpx;
+  }
+}
+.side-page {
+  transform: translateX(-50vw);
+  transition: transform 0.3s ease;
+}
+.mask-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3000;
+  background-color: $uni-bg-color-mask;
+  opacity: 0.7;
+}
+.popout {
+  transform: translateX(50%) scale(0.7);
+}
+.transformX {
+  transform: translateX(0);
+}
+// 字体无缝滚动  通知栏效果
+@include textLoop(0px) .text-loop {
+  padding-left: 100%;
+  animation: wordsLoop 10s linear infinite normal;
+}

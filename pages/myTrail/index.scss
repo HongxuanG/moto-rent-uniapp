@@ -1,0 +1,43 @@
+page {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100%;
+}
+.myTrail {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+}
+.active {
+  background-color: $theme-color;
+  color: #fff !important;
+}
+.head-right-icon {
+  color: $theme-color !important;
+}
+.switch-title {
+  border: 2px solid $theme-color;
+  border-radius: $uni-border-radius-lg;
+  .title-item {
+    padding: 10rpx;
+    color: $theme-color;
+  }
+}
+.content {
+  position: relative;
+}
+.noData {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  .noData-text {
+    text-align: center;
+    // padding: ;
+  }
+}
